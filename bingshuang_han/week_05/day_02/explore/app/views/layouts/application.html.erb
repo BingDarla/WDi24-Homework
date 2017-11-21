@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explore</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+    <nav>
+      <a href="/mountains">Mountain Index</a>
+      |
+      <a href="/mountains/new">Create</a>
+
+    </nav>
+
+    <%= yield %>
+    </div>
+  </body>
+</html>

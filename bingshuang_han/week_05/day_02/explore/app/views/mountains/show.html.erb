@@ -1,0 +1,9 @@
+<h2>Mountain <%= @mountain.name %></h2>
+<p>Location Country: <%= @mountain.country %></p>
+<p>Height :<%= @mountain.height %>M</p>
+<p>Climbing Season: <%= @mountain.intro %></p>
+<p><%= image_tag(@mountain.image, :class =>'feature')  unless @mountain.image.blank?%></p>
+<div class="control">
+<%= link_to 'Edit Mountain', mountain_edit_path(@mountain.id) %>
+<%= button_to 'Delete', mountain_delete_path(@mountain.id) %>
+</div>

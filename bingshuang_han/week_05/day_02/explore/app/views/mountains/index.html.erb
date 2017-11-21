@@ -1,0 +1,6 @@
+<h2>All the mountains</h2>
+<% @mountains.each  do |mountain|%>
+<li><a href="/mountains/<%= mountain.id %>"><%= mountain.name %>
+  <%= image_tag(mountain.image, :class => 'view') unless mountain.image.blank? %></a>
+</li>
+<% end %>
