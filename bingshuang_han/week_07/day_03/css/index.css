@@ -1,0 +1,44 @@
+body {
+  background-color: #ccc;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+
+}
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#slideshow img {
+    max-width:800px;
+    max-height:800px;
+}
+
+ul {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+ul li {
+    float:left;
+    border-radius:10px;
+    width:10px;
+    height:10px;
+    border:1px solid white;
+    background:grey;
+}
+ul li.active {
+    background:black;
+}
